@@ -1,0 +1,29 @@
+version: '3.8'
+networks:
+   bot:
+     driver: bridge
+volumes:
+  bot:
+
+services: 
+  bot: 
+    build: .
+    container_name: BotCore
+    volumes:
+      - bot:/app
+    environment:
+      - TOKEN=
+      - PRESENCE_ROLE=
+      - PRESENCE_STRING=discord.gg/akira13345
+      - SUGGESTION_CHANNEL=
+      - MEMBERS_CHANNEL_ID=
+      - CONNECTED_USERS_CHANNEL_ID=
+      - IP=play.remainsky.fr
+      - BOOST_ROLE_ID=
+      - BOOST_CHANNEL_ID=
+      - TEMPORARY_VOICE_CATEGORY=
+      - TEMPORARY_VOICE_CHANNEL=
+      - WELCOME_CHANNEL_ID=
+      - MEMBER_ROLE_ID=
+      - SUPPORT_ROLE_ID=
+      - TICKET_LOGS= 
