@@ -42,3 +42,8 @@ Un message d'embed est affiché lorsque quelqu'un booste le serveur Discord.
 Les utilisateurs obtenant un statut spécifique (comme discord.gg/akira) recevront un rôle associé. Si le statut est retiré, le rôle sera également retiré automatiquement.
 
 
+## Installation avec Docker
+
+1. Cloner le repos 
+2. Editez le fichier docker-compose.yml et modifier les variable d'environnement
+3. Lancer le bot avec la commande "docker-compose up -d".
